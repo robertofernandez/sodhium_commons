@@ -7,15 +7,25 @@ package ar.com.sodhium.commons.indexes;
  * 
  */
 public class Indexer {
-    private int[] indexedArray;
-    int width;
-    int height;
+    protected int[] indexedArray;
+    protected int width;
+    protected int height;
 
     public Indexer(int[] input, int width, int height) throws Exception {
         super();
         this.indexedArray = input;
         this.height = height;
         this.width = width;
+        if (indexedArray.length < width * height) {
+            throw new Exception("" + indexedArray.length + " < " + width + " * " + height);
+        }
+    }
+
+    public Indexer(Indexer baseIndexer) throws Exception {
+        super();
+        this.indexedArray = baseIndexer.indexedArray;
+        this.height = baseIndexer.height;
+        this.width = baseIndexer.width;
         if (indexedArray.length < width * height) {
             throw new Exception("" + indexedArray.length + " < " + width + " * " + height);
         }
@@ -33,8 +43,8 @@ public class Indexer {
     private void printError(int x, int y, int index) {
         String xAndY = "" + x + ", " + y;
         String widthAndHeight = "" + width + ", " + height;
-        System.out.println("w, h -> (" + widthAndHeight + "; x,y -> (" + xAndY + "); index = " + index
-                + "; limit = " + (indexedArray.length - 1));
+        System.out.println("w, h -> (" + widthAndHeight + "; x,y -> (" + xAndY + "); index = " + index + "; limit = "
+                + (indexedArray.length - 1));
     }
 
     public int getMaxSurounding(int x, int y) {
@@ -60,12 +70,11 @@ public class Indexer {
         }
         indexedArray[index] = value;
     }
-    
-    
+
     public int getHeight() {
         return height;
     }
-    
+
     public int getWidth() {
         return width;
     }
