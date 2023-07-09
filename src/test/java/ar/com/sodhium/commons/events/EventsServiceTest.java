@@ -8,10 +8,6 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import ar.com.sodhium.commons.events.EventParameters;
-import ar.com.sodhium.commons.events.EventsListener;
-import ar.com.sodhium.commons.events.EventsService;
-
 public class EventsServiceTest {
 
     @BeforeClass

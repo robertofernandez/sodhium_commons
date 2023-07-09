@@ -9,12 +9,6 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import ar.com.sodhium.commons.text.ChainedWordsBlock;
-import ar.com.sodhium.commons.text.SeparatorsSet;
-import ar.com.sodhium.commons.text.WeightedChainedWordsBlock;
-import ar.com.sodhium.commons.text.WordsProcessor;
-import ar.com.sodhium.commons.text.WordsWeightManager;
-
 public class WordsProcessorTest {
     private WordsWeightManager wordsWeightManager;
 
@@ -30,7 +24,7 @@ public class WordsProcessorTest {
     public void setUp() throws Exception {
         String[] suffixesArray = { "srl", "s.r.l.", "inc.", "inc", "corporation", "ltd.", "ltd", "llc", "l.l.c.",
                 "group", "corp.", "corp", "llp", "l.l.p.", "co", "co.", "gmbh", "incorporated", "limited",
-                "corporation", "limited", "liability", "partnership", "company", "studio", "studios"};
+                "corporation", "limited", "liability", "partnership", "company", "studio", "studios" };
 
         String[] modifierssArray = { "solutions", "technologies", "solutions", "technologies", "systems",
                 "international", "holdings", "consulting", "it", "technologies", "software", "systems", "tech",

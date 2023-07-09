@@ -10,8 +10,6 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import ar.com.sodhium.commons.strings.StringUtils;
-
 public class StringUtilsTest {
 
     @BeforeClass

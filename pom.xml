@@ -4,7 +4,7 @@
   <artifactId>sodhium-commons</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>sodhium-commons</name>
+  <name>Sodhium Commons</name>
   <groupId>sodhium-commons</groupId>
   <properties>
     <!-- Application settings -->

@@ -10,8 +10,6 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import ar.com.sodhium.commons.concurrent.TaskExecutor;
-import ar.com.sodhium.commons.concurrent.TaskHandler;
 import ar.com.sodhium.commons.exceptions.ExceptionPrinter;
 import ar.com.sodhium.commons.exceptions.ExceptionsListener;
 
